@@ -7,10 +7,10 @@
   </include>
   <include file="$(find husky_gazebo)/launch/spawn_husky.launch">
     <!-- Optionally configure the spawn position -->
-    <arg name="x" value="-5"/>
-    <arg name="y" value="-2"/>
+    <arg name="x" value="-6"/>
+    <arg name="y" value="-3"/>
     <arg name="z" value="0"/>
-    <arg name="yaw" value="0"/>
+    <arg name="yaw" value="1.57"/>
   </include>
 
 </launch>
