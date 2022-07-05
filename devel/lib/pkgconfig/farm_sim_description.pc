@@ -1,0 +1,8 @@
+prefix=/home/adeeb/asparagus_ws/devel
+
+Name: farm_sim_description
+Description: Description of farm_sim_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

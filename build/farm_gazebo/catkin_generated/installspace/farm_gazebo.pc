@@ -1,0 +1,8 @@
+prefix=/home/adeeb/asparagus_ws/install
+
+Name: farm_gazebo
+Description: Description of farm_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

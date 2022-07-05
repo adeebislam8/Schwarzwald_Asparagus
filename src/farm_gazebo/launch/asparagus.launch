@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find farm_gazebo)/worlds/asparagus4.world"/>
+    <!-- more default parameters can be changed here -->
+  </include>
+  <include file="$(find husky_gazebo)/launch/spawn_husky.launch">
+    <!-- Optionally configure the spawn position -->
+    <arg name="x" value="-5"/>
+    <arg name="y" value="-2"/>
+    <arg name="z" value="0"/>
+    <arg name="yaw" value="0"/>
+  </include>
+
+</launch>
