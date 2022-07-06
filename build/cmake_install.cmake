@@ -138,6 +138,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/adeeb/asparagus_ws/build/farm_gazebo/cmake_install.cmake")
   include("/home/adeeb/asparagus_ws/build/cpr_gazebo/cpr_race_modules/cmake_install.cmake")
   include("/home/adeeb/asparagus_ws/build/cpr_gazebo/cpr_obstacle_gazebo/cmake_install.cmake")
+  include("/home/adeeb/asparagus_ws/build/depthimage_to_laserscan/cmake_install.cmake")
 
 endif()
 

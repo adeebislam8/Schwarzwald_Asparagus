@@ -7,4 +7,5 @@
 # new environment variables
 
 # modified environment variables
+export LD_LIBRARY_PATH="/home/adeeb/asparagus_ws/devel/lib:$LD_LIBRARY_PATH"
 export PWD='/home/adeeb/asparagus_ws/build'
