@@ -1,0 +1,2817 @@
+<sdf version='1.6'>
+<world name="default">
+  <atmosphere type="adiabatic"/>
+  <wind>
+    <linear_velocity>0 0 0</linear_velocity>
+  </wind>
+  <physics name="default_physics" default="1" type="ode">
+    <max_step_size>0.001</max_step_size>
+    <real_time_factor>1</real_time_factor>
+    <real_time_update_rate>1000</real_time_update_rate>
+  </physics>
+  <gravity>0 0 -9.8</gravity>
+  <include>
+    <uri>model://mud_box</uri>
+  </include>
+  <include>
+    <uri>model://sun</uri>
+  </include>
+    <model name='wall_s'>
+    <pose frame=''>0.015 -0.135 0 0 -0 0</pose>
+    <link name='Wall_4'>
+      <collision name='Wall_4_Collision'>
+        <geometry>
+          <box>
+            <size>16 0.15 2.5</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 1.25 0 -0 0</pose>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Wall_4_Visual'>
+        <pose frame=''>0 0 1.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>16 0.15 2.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Grey</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-0 -7.425 0 0 -0 0</pose>
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+    </link>
+    <link name='Wall_6'>
+      <collision name='Wall_6_Collision'>
+        <geometry>
+          <box>
+            <size>15 0.15 2.5</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 1.25 0 -0 0</pose>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Wall_6_Visual'>
+        <pose frame=''>0 0 1.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>15 0.15 2.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Grey</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>7.925 0 0 0 -0 1.5708</pose>
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+    </link>
+    <link name='Wall_7'>
+      <collision name='Wall_7_Collision'>
+        <geometry>
+          <box>
+            <size>16 0.15 2.5</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 1.25 0 -0 0</pose>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Wall_7_Visual'>
+        <pose frame=''>0 0 1.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>16 0.15 2.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Grey</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-0 7.425 0 0 -0 3.14159</pose>
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+    </link>
+    <link name='Wall_8'>
+      <collision name='Wall_8_Collision'>
+        <geometry>
+          <box>
+            <size>15 0.15 2.5</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 1.25 0 -0 0</pose>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Wall_8_Visual'>
+        <pose frame=''>0 0 1.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>15 0.15 2.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Grey</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-7.925 0 0 0 -0 -1.5708</pose>
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+    </link>
+    <static>1</static>
+  </model>
+  <model name="asparagus_0">
+    <static>1</static>
+    <link name="asparagus_0">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.112331</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.112331</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_1">
+    <static>1</static>
+    <link name="asparagus_1">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0473228</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0473228</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_2">
+    <static>1</static>
+    <link name="asparagus_2">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0818084</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0818084</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_3">
+    <static>1</static>
+    <link name="asparagus_3">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.100181</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.100181</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_4">
+    <static>1</static>
+    <link name="asparagus_4">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0897081</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0897081</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_5">
+    <static>1</static>
+    <link name="asparagus_5">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0641762</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0641762</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_6">
+    <static>1</static>
+    <link name="asparagus_6">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.113175</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.113175</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_7">
+    <static>1</static>
+    <link name="asparagus_7">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0562377</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0562377</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_8">
+    <static>1</static>
+    <link name="asparagus_8">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0977689</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0977689</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_9">
+    <static>1</static>
+    <link name="asparagus_9">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0825089</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0825089</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_10">
+    <static>1</static>
+    <link name="asparagus_10">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0845102</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0845102</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_11">
+    <static>1</static>
+    <link name="asparagus_11">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0826848</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0826848</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_12">
+    <static>1</static>
+    <link name="asparagus_12">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0992209</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0992209</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_13">
+    <static>1</static>
+    <link name="asparagus_13">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0703869</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0703869</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_14">
+    <static>1</static>
+    <link name="asparagus_14">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0908744</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0908744</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_15">
+    <static>1</static>
+    <link name="asparagus_15">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0916691</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0916691</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_16">
+    <static>1</static>
+    <link name="asparagus_16">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0620659</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0620659</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_17">
+    <static>1</static>
+    <link name="asparagus_17">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0712823</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0712823</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_18">
+    <static>1</static>
+    <link name="asparagus_18">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0615293</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0615293</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_19">
+    <static>1</static>
+    <link name="asparagus_19">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0843219</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0843219</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_20">
+    <static>1</static>
+    <link name="asparagus_20">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0917868</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0917868</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_21">
+    <static>1</static>
+    <link name="asparagus_21">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0923374</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0923374</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_22">
+    <static>1</static>
+    <link name="asparagus_22">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0838793</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0838793</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_23">
+    <static>1</static>
+    <link name="asparagus_23">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.102103</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.102103</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_24">
+    <static>1</static>
+    <link name="asparagus_24">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0867962</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0867962</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_25">
+    <static>1</static>
+    <link name="asparagus_25">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0731343</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0731343</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_26">
+    <static>1</static>
+    <link name="asparagus_26">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0946777</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0946777</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_27">
+    <static>1</static>
+    <link name="asparagus_27">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.086396</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.086396</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_28">
+    <static>1</static>
+    <link name="asparagus_28">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0754787</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0754787</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_29">
+    <static>1</static>
+    <link name="asparagus_29">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0806209</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0806209</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_30">
+    <static>1</static>
+    <link name="asparagus_30">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0911245</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0911245</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_31">
+    <static>1</static>
+    <link name="asparagus_31">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0614911</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0614911</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_32">
+    <static>1</static>
+    <link name="asparagus_32">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0860907</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0860907</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_33">
+    <static>1</static>
+    <link name="asparagus_33">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.078116</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.078116</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_34">
+    <static>1</static>
+    <link name="asparagus_34">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0654034</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0654034</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_35">
+    <static>1</static>
+    <link name="asparagus_35">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0793816</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0793816</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_36">
+    <static>1</static>
+    <link name="asparagus_36">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.061836</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.061836</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_37">
+    <static>1</static>
+    <link name="asparagus_37">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0917353</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0917353</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_38">
+    <static>1</static>
+    <link name="asparagus_38">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0697569</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0697569</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_39">
+    <static>1</static>
+    <link name="asparagus_39">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0853692</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0853692</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_40">
+    <static>1</static>
+    <link name="asparagus_40">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0550359</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0550359</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_41">
+    <static>1</static>
+    <link name="asparagus_41">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0837047</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0837047</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_42">
+    <static>1</static>
+    <link name="asparagus_42">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0864914</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0864914</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_43">
+    <static>1</static>
+    <link name="asparagus_43">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0840151</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0840151</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_44">
+    <static>1</static>
+    <link name="asparagus_44">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0655177</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0655177</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_45">
+    <static>1</static>
+    <link name="asparagus_45">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0720355</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0720355</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_46">
+    <static>1</static>
+    <link name="asparagus_46">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0946616</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0946616</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_47">
+    <static>1</static>
+    <link name="asparagus_47">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.100498</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.100498</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_48">
+    <static>1</static>
+    <link name="asparagus_48">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0777897</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0777897</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_49">
+    <static>1</static>
+    <link name="asparagus_49">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0552779</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0552779</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_50">
+    <static>1</static>
+    <link name="asparagus_50">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.087681</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.087681</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_51">
+    <static>1</static>
+    <link name="asparagus_51">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0753609</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0753609</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_52">
+    <static>1</static>
+    <link name="asparagus_52">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.07469</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.07469</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_53">
+    <static>1</static>
+    <link name="asparagus_53">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0801551</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0801551</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_54">
+    <static>1</static>
+    <link name="asparagus_54">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0802712</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0802712</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_55">
+    <static>1</static>
+    <link name="asparagus_55">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0751874</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0751874</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_56">
+    <static>1</static>
+    <link name="asparagus_56">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.091138</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.091138</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_57">
+    <static>1</static>
+    <link name="asparagus_57">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0926047</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0926047</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_58">
+    <static>1</static>
+    <link name="asparagus_58">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0736542</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0736542</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_59">
+    <static>1</static>
+    <link name="asparagus_59">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0849954</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0849954</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_60">
+    <static>1</static>
+    <link name="asparagus_60">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0757272</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0757272</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_61">
+    <static>1</static>
+    <link name="asparagus_61">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0863699</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0863699</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_62">
+    <static>1</static>
+    <link name="asparagus_62">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0964748</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0964748</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_63">
+    <static>1</static>
+    <link name="asparagus_63">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0693215</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0693215</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_64">
+    <static>1</static>
+    <link name="asparagus_64">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0850065</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0850065</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_65">
+    <static>1</static>
+    <link name="asparagus_65">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0662845</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0662845</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_66">
+    <static>1</static>
+    <link name="asparagus_66">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.102077</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.102077</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_67">
+    <static>1</static>
+    <link name="asparagus_67">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0811444</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0811444</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_68">
+    <static>1</static>
+    <link name="asparagus_68">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0750408</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0750408</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_69">
+    <static>1</static>
+    <link name="asparagus_69">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0806644</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0806644</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_70">
+    <static>1</static>
+    <link name="asparagus_70">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0536512</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0536512</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_71">
+    <static>1</static>
+    <link name="asparagus_71">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0772972</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0772972</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_72">
+    <static>1</static>
+    <link name="asparagus_72">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0726191</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0726191</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_73">
+    <static>1</static>
+    <link name="asparagus_73">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0532213</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0532213</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_74">
+    <static>1</static>
+    <link name="asparagus_74">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0934097</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0934097</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_75">
+    <static>1</static>
+    <link name="asparagus_75">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.077111</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.077111</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_76">
+    <static>1</static>
+    <link name="asparagus_76">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0388502</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0388502</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_77">
+    <static>1</static>
+    <link name="asparagus_77">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0585089</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0585089</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_78">
+    <static>1</static>
+    <link name="asparagus_78">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0821625</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0821625</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_79">
+    <static>1</static>
+    <link name="asparagus_79">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0583449</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0583449</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_80">
+    <static>1</static>
+    <link name="asparagus_80">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0923497</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0923497</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_81">
+    <static>1</static>
+    <link name="asparagus_81">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.079972</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.079972</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_82">
+    <static>1</static>
+    <link name="asparagus_82">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0827894</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0827894</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_83">
+    <static>1</static>
+    <link name="asparagus_83">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0621524</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0621524</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_84">
+    <static>1</static>
+    <link name="asparagus_84">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0981446</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0981446</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_85">
+    <static>1</static>
+    <link name="asparagus_85">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.081175</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.081175</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_86">
+    <static>1</static>
+    <link name="asparagus_86">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.070956</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.070956</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_87">
+    <static>1</static>
+    <link name="asparagus_87">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.105354</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.105354</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_88">
+    <static>1</static>
+    <link name="asparagus_88">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0769581</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0769581</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <model name="asparagus_89">
+    <static>1</static>
+    <link name="asparagus_89">
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0852379</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Asparagus/meshes/asparagus.obj</uri>
+            <scale>0.08 0.08 0.0852379</scale>
+          </mesh>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+  </model>
+  <state world_name="default">
+    <iterations>0</iterations>
+    <model name="asparagus_0">
+      <pose frame="">-4.51856 -3.71308 0 0.0356968 -0.108081 5.09243</pose>
+      <link name="link">
+        <pose frame="">-4.51856 -3.71308 0 0.0356968 -0.108081 5.09243</pose>
+      </link>
+    </model>
+    <model name="asparagus_1">
+      <pose frame="">-0.770906 -3.62873 0 0.0461318 0.0204467 1.29209</pose>
+      <link name="link">
+        <pose frame="">-0.770906 -3.62873 0 0.0461318 0.0204467 1.29209</pose>
+      </link>
+    </model>
+    <model name="asparagus_2">
+      <pose frame="">3.07989 -3.62582 0 -0.0452268 0.00685079 1.1827</pose>
+      <link name="link">
+        <pose frame="">3.07989 -3.62582 0 -0.0452268 0.00685079 1.1827</pose>
+      </link>
+    </model>
+    <model name="asparagus_3">
+      <pose frame="">-4.56333 -2.94026 0 -0.00466757 -0.120775 3.85803</pose>
+      <link name="link">
+        <pose frame="">-4.56333 -2.94026 0 -0.00466757 -0.120775 3.85803</pose>
+      </link>
+    </model>
+    <model name="asparagus_4">
+      <pose frame="">-0.776091 -2.94622 0 0.0334039 -0.0769126 4.52453</pose>
+      <link name="link">
+        <pose frame="">-0.776091 -2.94622 0 0.0334039 -0.0769126 4.52453</pose>
+      </link>
+    </model>
+    <model name="asparagus_5">
+      <pose frame="">2.98037 -2.92553 0 0.000677895 0.0823677 1.26104</pose>
+      <link name="link">
+        <pose frame="">2.98037 -2.92553 0 0.000677895 0.0823677 1.26104</pose>
+      </link>
+    </model>
+    <model name="asparagus_6">
+      <pose frame="">-4.36585 -2.38783 0 -0.0161327 -0.115782 2.34512</pose>
+      <link name="link">
+        <pose frame="">-4.36585 -2.38783 0 -0.0161327 -0.115782 2.34512</pose>
+      </link>
+    </model>
+    <model name="asparagus_7">
+      <pose frame="">-0.837632 -2.19801 0 0.0732154 0.09892 2.23507</pose>
+      <link name="link">
+        <pose frame="">-0.837632 -2.19801 0 0.0732154 0.09892 2.23507</pose>
+      </link>
+    </model>
+    <model name="asparagus_8">
+      <pose frame="">2.92141 -2.29808 0 -0.0571704 0.0232822 1.25724</pose>
+      <link name="link">
+        <pose frame="">2.92141 -2.29808 0 -0.0571704 0.0232822 1.25724</pose>
+      </link>
+    </model>
+    <model name="asparagus_9">
+      <pose frame="">-4.61411 -1.48146 0 -0.0685361 0.0610363 0.957679</pose>
+      <link name="link">
+        <pose frame="">-4.61411 -1.48146 0 -0.0685361 0.0610363 0.957679</pose>
+      </link>
+    </model>
+    <model name="asparagus_10">
+      <pose frame="">-0.872471 -1.42807 0 0.0936223 0.000775598 5.62521</pose>
+      <link name="link">
+        <pose frame="">-0.872471 -1.42807 0 0.0936223 0.000775598 5.62521</pose>
+      </link>
+    </model>
+    <model name="asparagus_11">
+      <pose frame="">2.91125 -1.45707 0 0.00951746 -0.0324508 1.84797</pose>
+      <link name="link">
+        <pose frame="">2.91125 -1.45707 0 0.00951746 -0.0324508 1.84797</pose>
+      </link>
+    </model>
+    <model name="asparagus_12">
+      <pose frame="">-4.61697 -0.673297 0 0.0499031 0.0210195 1.25684</pose>
+      <link name="link">
+        <pose frame="">-4.61697 -0.673297 0 0.0499031 0.0210195 1.25684</pose>
+      </link>
+    </model>
+    <model name="asparagus_13">
+      <pose frame="">-0.658373 -0.843271 0 0.0375938 0.00441944 3.71088</pose>
+      <link name="link">
+        <pose frame="">-0.658373 -0.843271 0 0.0375938 0.00441944 3.71088</pose>
+      </link>
+    </model>
+    <model name="asparagus_14">
+      <pose frame="">3.12614 -0.824487 0 -0.000589032 -0.0712164 3.33329</pose>
+      <link name="link">
+        <pose frame="">3.12614 -0.824487 0 -0.000589032 -0.0712164 3.33329</pose>
+      </link>
+    </model>
+    <model name="asparagus_15">
+      <pose frame="">-4.47572 0.129614 0 -0.0315578 -0.022779 0.619274</pose>
+      <link name="link">
+        <pose frame="">-4.47572 0.129614 0 -0.0315578 -0.022779 0.619274</pose>
+      </link>
+    </model>
+    <model name="asparagus_16">
+      <pose frame="">-0.885367 0.0533904 0 -0.0894305 0.0100927 2.48293</pose>
+      <link name="link">
+        <pose frame="">-0.885367 0.0533904 0 -0.0894305 0.0100927 2.48293</pose>
+      </link>
+    </model>
+    <model name="asparagus_17">
+      <pose frame="">3.07475 0.133036 0 -0.110263 -0.0015146 4.78341</pose>
+      <link name="link">
+        <pose frame="">3.07475 0.133036 0 -0.110263 -0.0015146 4.78341</pose>
+      </link>
+    </model>
+    <model name="asparagus_18">
+      <pose frame="">-4.57014 0.80678 0 0.0235157 0.0185695 5.91977</pose>
+      <link name="link">
+        <pose frame="">-4.57014 0.80678 0 0.0235157 0.0185695 5.91977</pose>
+      </link>
+    </model>
+    <model name="asparagus_19">
+      <pose frame="">-0.66149 0.678531 0 -0.0123491 0.0234284 1.01285</pose>
+      <link name="link">
+        <pose frame="">-0.66149 0.678531 0 -0.0123491 0.0234284 1.01285</pose>
+      </link>
+    </model>
+    <model name="asparagus_20">
+      <pose frame="">3.02406 0.830368 0 0.0446586 -0.119473 0.251755</pose>
+      <link name="link">
+        <pose frame="">3.02406 0.830368 0 0.0446586 -0.119473 0.251755</pose>
+      </link>
+    </model>
+    <model name="asparagus_21">
+      <pose frame="">-4.59486 1.43759 0 0.00848734 -0.0940713 5.5701</pose>
+      <link name="link">
+        <pose frame="">-4.59486 1.43759 0 0.00848734 -0.0940713 5.5701</pose>
+      </link>
+    </model>
+    <model name="asparagus_22">
+      <pose frame="">-0.772217 1.64667 0 0.083046 0.00159614 4.72953</pose>
+      <link name="link">
+        <pose frame="">-0.772217 1.64667 0 0.083046 0.00159614 4.72953</pose>
+      </link>
+    </model>
+    <model name="asparagus_23">
+      <pose frame="">2.93052 1.48841 0 0.039097 0.00371807 1.67629</pose>
+      <link name="link">
+        <pose frame="">2.93052 1.48841 0 0.039097 0.00371807 1.67629</pose>
+      </link>
+    </model>
+    <model name="asparagus_24">
+      <pose frame="">-4.53901 2.12684 0 0.00979586 0.0133456 2.0767</pose>
+      <link name="link">
+        <pose frame="">-4.53901 2.12684 0 0.00979586 0.0133456 2.0767</pose>
+      </link>
+    </model>
+    <model name="asparagus_25">
+      <pose frame="">-0.645607 2.19241 0 -0.0544809 -0.037228 5.48612</pose>
+      <link name="link">
+        <pose frame="">-0.645607 2.19241 0 -0.0544809 -0.037228 5.48612</pose>
+      </link>
+    </model>
+    <model name="asparagus_26">
+      <pose frame="">2.97491 2.39603 0 -0.0686741 -0.0905592 4.72364</pose>
+      <link name="link">
+        <pose frame="">2.97491 2.39603 0 -0.0686741 -0.0905592 4.72364</pose>
+      </link>
+    </model>
+    <model name="asparagus_27">
+      <pose frame="">-4.40391 2.9047 0 -0.0364615 0.107548 4.42158</pose>
+      <link name="link">
+        <pose frame="">-4.40391 2.9047 0 -0.0364615 0.107548 4.42158</pose>
+      </link>
+    </model>
+    <model name="asparagus_28">
+      <pose frame="">-0.818472 2.89423 0 -0.00188851 0.0170328 5.74512</pose>
+      <link name="link">
+        <pose frame="">-0.818472 2.89423 0 -0.00188851 0.0170328 5.74512</pose>
+      </link>
+    </model>
+    <model name="asparagus_29">
+      <pose frame="">2.93453 2.93489 0 -0.000250526 -0.066978 1.56785</pose>
+      <link name="link">
+        <pose frame="">2.93453 2.93489 0 -0.000250526 -0.066978 1.56785</pose>
+      </link>
+    </model>
+    <model name="asparagus_30">
+      <pose frame="">-3.81007 -3.8771 0 0.00272318 4.67685e-05 0.327425</pose>
+      <link name="link">
+        <pose frame="">-3.81007 -3.8771 0 0.00272318 4.67685e-05 0.327425</pose>
+      </link>
+    </model>
+    <model name="asparagus_31">
+      <pose frame="">0.121535 -3.75355 0 -0.00752551 -0.107399 0.894739</pose>
+      <link name="link">
+        <pose frame="">0.121535 -3.75355 0 -0.00752551 -0.107399 0.894739</pose>
+      </link>
+    </model>
+    <model name="asparagus_32">
+      <pose frame="">3.83419 -3.84574 0 -0.0568493 0.00471436 2.95381</pose>
+      <link name="link">
+        <pose frame="">3.83419 -3.84574 0 -0.0568493 0.00471436 2.95381</pose>
+      </link>
+    </model>
+    <model name="asparagus_33">
+      <pose frame="">-3.79904 -2.90743 0 0.00849557 -0.0397647 3.44207</pose>
+      <link name="link">
+        <pose frame="">-3.79904 -2.90743 0 0.00849557 -0.0397647 3.44207</pose>
+      </link>
+    </model>
+    <model name="asparagus_34">
+      <pose frame="">0.061348 -3.07292 0 -0.0243367 0.0407505 1.18604</pose>
+      <link name="link">
+        <pose frame="">0.061348 -3.07292 0 -0.0243367 0.0407505 1.18604</pose>
+      </link>
+    </model>
+    <model name="asparagus_35">
+      <pose frame="">3.61188 -2.96869 0 0.0302284 0.00188249 1.77959</pose>
+      <link name="link">
+        <pose frame="">3.61188 -2.96869 0 0.0302284 0.00188249 1.77959</pose>
+      </link>
+    </model>
+    <model name="asparagus_36">
+      <pose frame="">-3.73509 -2.16484 0 0.0467731 -0.0293179 2.51282</pose>
+      <link name="link">
+        <pose frame="">-3.73509 -2.16484 0 0.0467731 -0.0293179 2.51282</pose>
+      </link>
+    </model>
+    <model name="asparagus_37">
+      <pose frame="">0.009638 -2.34473 0 -0.00764572 -0.0916864 2.51906</pose>
+      <link name="link">
+        <pose frame="">0.009638 -2.34473 0 -0.00764572 -0.0916864 2.51906</pose>
+      </link>
+    </model>
+    <model name="asparagus_38">
+      <pose frame="">3.65289 -2.11273 0 -0.0223572 -0.00963445 2.52648</pose>
+      <link name="link">
+        <pose frame="">3.65289 -2.11273 0 -0.0223572 -0.00963445 2.52648</pose>
+      </link>
+    </model>
+    <model name="asparagus_39">
+      <pose frame="">-3.74632 -1.58733 0 -0.102955 -0.00228971 3.04032</pose>
+      <link name="link">
+        <pose frame="">-3.74632 -1.58733 0 -0.102955 -0.00228971 3.04032</pose>
+      </link>
+    </model>
+    <model name="asparagus_40">
+      <pose frame="">-0.079632 -1.41917 0 -0.0133912 -0.0921249 5.09188</pose>
+      <link name="link">
+        <pose frame="">-0.079632 -1.41917 0 -0.0133912 -0.0921249 5.09188</pose>
+      </link>
+    </model>
+    <model name="asparagus_41">
+      <pose frame="">3.60466 -1.37107 0 -0.0943596 0.0354079 1.13128</pose>
+      <link name="link">
+        <pose frame="">3.60466 -1.37107 0 -0.0943596 0.0354079 1.13128</pose>
+      </link>
+    </model>
+    <model name="asparagus_42">
+      <pose frame="">-3.7507 -0.755494 0 0.048118 0.00507193 0.477211</pose>
+      <link name="link">
+        <pose frame="">-3.7507 -0.755494 0 0.048118 0.00507193 0.477211</pose>
+      </link>
+    </model>
+    <model name="asparagus_43">
+      <pose frame="">-0.0631347 -0.829829 0 -0.0949936 -0.105113 3.84157</pose>
+      <link name="link">
+        <pose frame="">-0.0631347 -0.829829 0 -0.0949936 -0.105113 3.84157</pose>
+      </link>
+    </model>
+    <model name="asparagus_44">
+      <pose frame="">3.82948 -0.724092 0 -0.0325323 0.070488 5.95091</pose>
+      <link name="link">
+        <pose frame="">3.82948 -0.724092 0 -0.0325323 0.070488 5.95091</pose>
+      </link>
+    </model>
+    <model name="asparagus_45">
+      <pose frame="">-3.62538 -0.0926457 0 0.0566494 0.0582524 3.04226</pose>
+      <link name="link">
+        <pose frame="">-3.62538 -0.0926457 0 0.0566494 0.0582524 3.04226</pose>
+      </link>
+    </model>
+    <model name="asparagus_46">
+      <pose frame="">0.00279024 -0.0819867 0 -0.0971831 -0.0484664 2.2437</pose>
+      <link name="link">
+        <pose frame="">0.00279024 -0.0819867 0 -0.0971831 -0.0484664 2.2437</pose>
+      </link>
+    </model>
+    <model name="asparagus_47">
+      <pose frame="">3.65341 -0.0269802 0 -0.0809215 -0.0830219 4.09952</pose>
+      <link name="link">
+        <pose frame="">3.65341 -0.0269802 0 -0.0809215 -0.0830219 4.09952</pose>
+      </link>
+    </model>
+    <model name="asparagus_48">
+      <pose frame="">-3.63984 0.760661 0 -0.0463741 -0.1003 3.53918</pose>
+      <link name="link">
+        <pose frame="">-3.63984 0.760661 0 -0.0463741 -0.1003 3.53918</pose>
+      </link>
+    </model>
+    <model name="asparagus_49">
+      <pose frame="">-0.0562409 0.862912 0 0.0581121 -0.0737812 1.464</pose>
+      <link name="link">
+        <pose frame="">-0.0562409 0.862912 0 0.0581121 -0.0737812 1.464</pose>
+      </link>
+    </model>
+    <model name="asparagus_50">
+      <pose frame="">3.82661 0.830445 0 -0.0073379 0.00349539 0.237781</pose>
+      <link name="link">
+        <pose frame="">3.82661 0.830445 0 -0.0073379 0.00349539 0.237781</pose>
+      </link>
+    </model>
+    <model name="asparagus_51">
+      <pose frame="">-3.74853 1.37491 0 0.0713355 -0.0872613 0.736825</pose>
+      <link name="link">
+        <pose frame="">-3.74853 1.37491 0 0.0713355 -0.0872613 0.736825</pose>
+      </link>
+    </model>
+    <model name="asparagus_52">
+      <pose frame="">-0.106204 1.62014 0 0.00696899 0.0818228 4.79784</pose>
+      <link name="link">
+        <pose frame="">-0.106204 1.62014 0 0.00696899 0.0818228 4.79784</pose>
+      </link>
+    </model>
+    <model name="asparagus_53">
+      <pose frame="">3.86955 1.60834 0 -0.0853869 -0.050795 3.53098</pose>
+      <link name="link">
+        <pose frame="">3.86955 1.60834 0 -0.0853869 -0.050795 3.53098</pose>
+      </link>
+    </model>
+    <model name="asparagus_54">
+      <pose frame="">-3.65558 2.32609 0 -0.0202266 0.128139 5.31351</pose>
+      <link name="link">
+        <pose frame="">-3.65558 2.32609 0 -0.0202266 0.128139 5.31351</pose>
+      </link>
+    </model>
+    <model name="asparagus_55">
+      <pose frame="">-0.134017 2.18482 0 0.0781683 -0.00826219 2.13016</pose>
+      <link name="link">
+        <pose frame="">-0.134017 2.18482 0 0.0781683 -0.00826219 2.13016</pose>
+      </link>
+    </model>
+    <model name="asparagus_56">
+      <pose frame="">3.68816 2.21622 0 -0.0843309 0.0261853 0.228489</pose>
+      <link name="link">
+        <pose frame="">3.68816 2.21622 0 -0.0843309 0.0261853 0.228489</pose>
+      </link>
+    </model>
+    <model name="asparagus_57">
+      <pose frame="">-3.8348 3.12836 0 -0.02102 -0.014929 6.19022</pose>
+      <link name="link">
+        <pose frame="">-3.8348 3.12836 0 -0.02102 -0.014929 6.19022</pose>
+      </link>
+    </model>
+    <model name="asparagus_58">
+      <pose frame="">-0.0252951 3.03041 0 -0.0297441 0.0525517 1.52503</pose>
+      <link name="link">
+        <pose frame="">-0.0252951 3.03041 0 -0.0297441 0.0525517 1.52503</pose>
+      </link>
+    </model>
+    <model name="asparagus_59">
+      <pose frame="">3.80407 3.13912 0 -0.0563911 0.0239097 5.66052</pose>
+      <link name="link">
+        <pose frame="">3.80407 3.13912 0 -0.0563911 0.0239097 5.66052</pose>
+      </link>
+    </model>
+  </state>
+</world>
+</sdf>
